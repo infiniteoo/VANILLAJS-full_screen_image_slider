@@ -16,4 +16,19 @@ function startSlide() {
   sliderImages[0].style.display = "block";
 }
 
+// show previous
+function slideLeft() {
+  reset();
+  sliderImages[current - 1].style.display = "block";
+  current--;
+}
+
+// left arrow event listener
+arrowLeft.addEventListener("click", function () {
+  if (current === 0) {
+    current = sliderImages.length;
+  }
+  slideLeft();
+});
+
 startSlide();
