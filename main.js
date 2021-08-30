@@ -31,4 +31,19 @@ arrowLeft.addEventListener("click", function () {
   slideLeft();
 });
 
+// show previous
+function slideRight() {
+  reset();
+  sliderImages[current + 1].style.display = "block";
+  current++;
+}
+
+// right arrow event listener
+arrowRight.addEventListener("click", function () {
+  if (current === sliderImages.length - 1) {
+    current = -1;
+  }
+  slideRight();
+});
+
 startSlide();
