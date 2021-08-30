@@ -9,3 +9,11 @@ function reset() {
     sliderImages[i].style.display = "none";
   }
 }
+
+// initializes slider
+function startSlide() {
+  reset();
+  sliderImages[0].style.display = "block";
+}
+
+startSlide();
