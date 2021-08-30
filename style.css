@@ -10,4 +10,22 @@ body,
   overflow-x: hidden;
 }
 
+.wrap {
+  position: relative;
+}
 
+.slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide1 {
+  background-image: url("img/image1.jpeg");
+}
+.slide2 {
+  background-image: url("img/image2.jpeg");
+}
+.slide3 {
+  background-image: url("img/image3.jpeg");
+}
