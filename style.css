@@ -29,3 +29,16 @@ body,
 .slide3 {
   background-image: url("img/image3.jpeg");
 }
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-content span {
+  font-size: 5rem;
+  color: #fff;
+}
+
